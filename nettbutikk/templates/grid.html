@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flour Shower</title>
+  </head>
+
+  <body>
+    <div class="header">
+      <header>
+        <img src="/static/img/flour shower.PNG" alt="" />
+        <a href="produkter.html">Produkter</a>
+      </header>
+    </div>
+    <div id="pakker">
+      <h1>Ski</h1>
+      <br />
+
+      <br />
+      <br />
+      <div id="grid">
+        {% for ski in skiene %}
+        <div>
+          <img src="static/img{{ski.bilde}}" alt="" />
+          <h3>{{ski.merke}}</h3>
+          <h4>{{ski.modell}}</h4>
+          <p>Bredde: {{ski.bredde}} mm</p>
+          <p>Vekt: {{ski.vekt}} g</p>
+          <p class="pris"><b>{{ski.pris}},-</b></p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </body>
+</html>

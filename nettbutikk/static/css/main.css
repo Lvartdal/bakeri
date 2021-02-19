@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap");
+#grid {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  text-align: center;
+}
+header {
+  background-color: #463f3a;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+header a {
+  font-size: 50px;
+  padding: 100px;
+  font-family: "Akaya Kanadaka", cursive;
+  text-decoration: none;
+  color: black;
+}
+body {
+  background-color: #8a817c;
+  margin: 0;
+  padding: 0;
+}
+
+#pakker {
+  max-width: 700px;
+  margin: auto;
+}
+
+#grid a {
+  background-color: aliceblue;
+  border: 2px solid black;
+  padding: 10px;
+  align-self: stretch;
+}
+
+#grid a:hover {
+  cursor: pointer;
+  box-shadow: 7px 7px 7px 3px #ffffff;
+}
+header img {
+  width: 200px;
+  height: 100%;
+}
+
+#grid img {
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  color: aliceblue;
+}
+
+.pris {
+  text-align: center;
+  font-size: 30px;
+}
+
+#grid a {
+  color: black;
+  text-decoration: none;
+}
+
+a.meny {
+  color: azure;
+  text-decoration: none;
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+img {
+  width: 100%;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  padding: 2px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: azure;
+}
+
+table tr:hover {
+  background-color: cornflowerblue;
+  cursor: pointer;
+}
+#fjell h2 {
+  color: cornsilk;
+  font-size: 50px;
+}
+#fjell p {
+  color: cornsilk;
+}

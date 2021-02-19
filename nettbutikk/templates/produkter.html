@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flour Shower</title>
+    <link rel="stylesheet" href="/static/css/main.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <header>
+        <img src="/static/img/flourshower.PNG" alt="">
+        <a href="/">Vårt Utvalg!</a>
+        <a href="index.html">Hjem</a> 
+      </header>
+    </div>
+
+    <div id="pakker">
+    
+      <div id="grid">
+        {% for butikk in butikk %}
+        <a href="butikk/{{butikk.id}}">
+          <div>
+            <img src="../static/img/{{butikk.bilde}}" alt="" />
+            <h3>{{butikk.navn}}</h3>
+            <p>{{butikk.info}}</p>
+            <p>Pris: {{butikk.pris}}kr</p>
+          </div>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+  </body>
+</html>
