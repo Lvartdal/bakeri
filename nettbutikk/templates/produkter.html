@@ -11,18 +11,32 @@
     
     <div class="header">
       <header>
-        <img src="/static/img/flourshower(1).jpg" alt="">
-        <a href="/index.html">Hjem</a>
-        <a href="/produkter.html">Produkter</a>
-        <a href="/">Utvalg</a>
+
+        <div class="bar"><img src="/static/img/logo.png" alt="">
+          <a href="/">Hjem</a>
+          <a href="/produkter/relevans/DESC">Produkter</a>
+          <a href="/info">Om oss</a></div>
+        
+
       </header>
     </div>
-    <nav>
-      <h1>Sorter:</h1>
-      <a href="">Pris stigende</a>
-      <a href="/">Relevans</a>
-      <a href="/produkter/pris/ASC">Pris Synkende</a>
-    </nav>
+
+    <div class="sorter">
+      
+    </div>
+    <div class="sortering">
+      
+        <p>
+          <nav>
+            <a href="/produkter/pris/DESC">Pris stigende</a>
+          <a href="/produkter/relevans/DESC">Relevans</a>
+          <a href="/produkter/pris/ASC">Pris Synkende</a>
+        </nav>
+      </p>
+        
+
+    </div>
+    
 
     <div id="pakker">
     
@@ -30,7 +44,7 @@
         {% for butikk in butikk %}
         <a href="butikk/{{butikk.id}}">
           <div>
-            <img src="../static/img/{{butikk.bilde}}" alt="" />
+            <img src="/IT-oppgave/bakeri/nettbutikk/static/img/{{butikk.bilde}}" alt="" />
             <h3>{{butikk.modell}}</h3>
             <h3>{{butikk.navn}}</h3>
             <p>{{butikk.info}}</p>
