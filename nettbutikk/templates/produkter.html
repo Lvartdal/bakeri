@@ -6,15 +6,23 @@
     <title>Flour Shower</title>
     <link rel="stylesheet" href="/static/css/main.css" />
   </head>
-
+  
   <body>
+    
     <div class="header">
       <header>
-        <img src="/static/img/flourshower.PNG" alt="">
-        <a href="/">Vårt Utvalg!</a>
-        <a href="index.html">Hjem</a> 
+        <img src="/static/img/flourshower(1).jpg" alt="">
+        <a href="/index.html">Hjem</a>
+        <a href="/produkter.html">Produkter</a>
+        <a href="/">Utvalg</a>
       </header>
     </div>
+    <nav>
+      <h1>Sorter:</h1>
+      <a href="">Pris stigende</a>
+      <a href="">Relevans</a>
+      <a href="">Pris Synkende</a>
+    </nav>
 
     <div id="pakker">
     
@@ -23,6 +31,7 @@
         <a href="butikk/{{butikk.id}}">
           <div>
             <img src="../static/img/{{butikk.bilde}}" alt="" />
+            <h3>{{butikk.modell}}</h3>
             <h3>{{butikk.navn}}</h3>
             <p>{{butikk.info}}</p>
             <p>Pris: {{butikk.pris}}kr</p>
@@ -32,4 +41,5 @@
       </div>
     </div>
   </body>
+
 </html>

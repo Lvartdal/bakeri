@@ -25,10 +25,18 @@ def __init__(self, pris, bilde, info, relevans, modell):
     self.modell = modell
 
 
-@app.route('/')
-def produkter():
-    butikk = db.engine.execute('SELECT * FROM butikk ORDER BY relevans DESC')
+@app.route('/produkter/<sorter>/<rekke>')
+def produkter(sorter, rekke):
+    butikk = db.engine.execute(
+        f'SELECT * FROM butikk ORDER BY "{sorter}" "{rekke}"')
     return render_template('produkter.html', butikk=butikk)
+
+
+@app.route('/')
+def index():
+    butikk = db.engine.execute(
+        'SELECT * FROM butikk')
+    return render_template('index.html', butikk=butikk)
 
 
 app.run(debug=True)

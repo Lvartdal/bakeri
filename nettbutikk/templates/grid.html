@@ -20,11 +20,11 @@
       <br />
       <br />
       <div id="grid">
-        {% for ski in skiene %}
+        {% for butikk in butikk %}
         <div>
-          <img src="static/img{{ski.bilde}}" alt="" />
-          <h3>{{ski.merke}}</h3>
-          <h4>{{ski.modell}}</h4>
+          <img src="static/img{{butikk.bilde}}" alt="" />
+          <h3>{{butikk.modell}}</h3>
+          <h4>{{butikk.bilde}}</h4>
           <p>Bredde: {{ski.bredde}} mm</p>
           <p>Vekt: {{ski.vekt}} g</p>
           <p class="pris"><b>{{ski.pris}},-</b></p>
@@ -32,5 +32,13 @@
         {% endfor %}
       </div>
     </div>
+    <footer>
+      e-post:flourshower@bread.com
+  
+      <div id="happytoast" onmousedown="catPet();clickCombo()">
+        <img id="happytoast" src="cute-happy-funny-toast-cartoon-character-illustration-icon-design-isolated_92289-1130.jpg" class="">
+        <div id="click-score" style="display: block;">0</div>
+      </div>
+    </footer>
   </body>
 </html>
